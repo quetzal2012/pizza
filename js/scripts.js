@@ -1,13 +1,15 @@
-function Order(size, toppings) {
+topping = 0;
+
+function Order(size, topping) {
   this.size = size;
-  this.toppings = toppings;
+  this.topping = topping;
 }
 
 Order.prototype.cost = function () {
   var cost = 7;
-  for (var i = 0; i < this.toppings.length; i++) {
-    if (this.toppings === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
-     cost +=1;
+  for (var i = 0; i < this.topping.length; i++) {
+    if (this.topping === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
+  cost +=1;
   }else if (this.size === "small"){
    cost += 1;
  } else if (this.size === "medium"){
@@ -27,18 +29,17 @@ Order.prototype.cost = function () {
 
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
-  $("input[name="toppings"]:checked").each(function () {
-  toppings.push($(this).val());
-  console.log(var cost = Order (size, toppings));
+  var topping = $("input:[name=toppings]:checked").val();
   var size = $("select#size").val();
+  var cost = Order (size, topping);
+
   });
-  var pizzaOrder = new Order(size, toppings);
+  var pizzaOrder = new Order(size, topping);
   var pizzaCost = pizzaOrder.cost();
 
-  event.preventDefault();
 
   $("#pizzaCost").text(pizzaCost);
+  event.preventDefault();
 
 
-});
 });
