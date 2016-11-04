@@ -12,6 +12,9 @@ function Order (size, toppings) {
 Order.prototype.cost = function () {
   var cost = 7;
   for (var i = 0; i < this.toppings; i++) {
+    if (this.toppings) === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
+    cost +=1;
+    }
     
   }
 }
