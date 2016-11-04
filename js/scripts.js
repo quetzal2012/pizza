@@ -1,5 +1,5 @@
 topping = 0;
-
+cost = 0;
 function Order(size, topping) {
   this.size = size;
   this.topping = topping;
@@ -29,10 +29,10 @@ Order.prototype.cost = function () {
 
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
-  var topping = $("input:[name=toppings]:checked").val();
   var size = $("select#size").val();
   var cost = Order (size, topping);
-
+  $('input[name="locationthemes"]:checked').each(function() {
+     console.log(this.topping);
   });
   var pizzaOrder = new Order(size, topping);
   var pizzaCost = pizzaOrder.cost();
@@ -42,4 +42,5 @@ $(document).ready(function() {
   event.preventDefault();
 
 
+});
 });
