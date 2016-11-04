@@ -1,39 +1,44 @@
-# Ping Pong
+# Adam Baker
 
-#### It is ping pong, but with a computer.  11/2/16
+#### A pizza ordering form  11/4/16
 
 #### By Adam Baker
 
 ## Description
 
-Allows the user to enter a number and then a list appears and is appended up to the number entered.  Every third number it says "Ping!", every fifth "Pong!", and fifteenth "Ping Pong!" then stops
+# Pizza Order
+#### _{Brief description of application}, {Date of current version}_
 
+#### By _**{List of contributors}**_
+
+## Description
+
+_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
 ## Setup/Installation Requirements
 
-* Download the index.html CSS, JS
-*
-* Enter a number
-*
-* Press "Ping Pong!"
+* _This is a great place_
+* _to list setup instructions_
+* _in a simple_
+* _easy-to-understand_
+* _format_
 
-Must refresh the page to start over.
+_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Known Bugs
 
-Fine operationally.
-
+At this time it is currently not outputting.
 
 ## Support and contact details
 
-Contact me on github.
+_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 ## Technologies Used
 
-Javascript, CSS, Bootstrap
+_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
 ### License
 
-MIT License
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-Copyright (c) 2016 Adam Baker
+Copyright (c) 2016 **_{List of contributors or company name}_**

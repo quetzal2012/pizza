@@ -21,11 +21,9 @@
         <div class="col-sm-6">
 <!--Order Form-->
           <form id="orderForm">
-            <div class="form-group">
+              <div class="form-group">
 <!--Size-->
-            <h3>Please select a size</h3>
-            <div class = "radio">
-              <label>
+             <h3>Please select a size</h3>
                 <label for="exampleSelect1">Example select</label>
                 <select class="form-control" id="size">
                   <option>Small</option>
@@ -37,7 +35,7 @@
 <!--Toppings-->
   <div class = "toppings">
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="sausage"> Sausage
+      <input class="form-check-input" type="checkbox" name="toppings" value="sausage"> Sausage
     </label>
     <label class="form-check-inline">
       <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni"> Pepperoni
@@ -52,8 +50,10 @@
       <input class="form-check-input" type="checkbox" name="toppings" value="canbacon"> Canadian Bacon
     </label>
   </div>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
 
 
 <span id ="pizzaCost">$</span>
