@@ -11,12 +11,11 @@ Order.prototype.cost = function () {
     if (this.toppings[i] === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
    cost += 1;
   }
-  console.log("afterToppings cost: " + cost);
-  if (this.size === "small"){
+  if (this.size === "Small"){
    cost += 1;
- }  if (this.size === "medium"){
+ }  if (this.size === "Medium"){
    cost += 3;
-}  if (this.size === "large"){
+}  if (this.size === "Large"){
    cost += 4;
  }
  }
