@@ -16,6 +16,7 @@ Order.prototype.cost = function () {
    cost += 1;
  }  if (this.size === "medium"){
    cost += 3;
+}  if (this.size === "large"){
    cost += 4;
  }
  }
