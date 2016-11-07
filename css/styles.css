@@ -2,6 +2,23 @@
   background-color: blue;
 }
 
+.heading {
+  align: center;
+  color: red;
+}
 #body {
-background-color: teal;
+background-image: url(https://s-media-cache-ak0.pinimg.com/736x/06/ed/55/06ed5517964dbe7ba5242fe4f4a367f3.jpg);
+}
+
+.toppings {
+  color: blue;
+  font-size: large;
+}
+.btn btn-primary {
+  float: right;
+
+}
+#dollarBox {
+  align: right;
+
 }

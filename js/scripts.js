@@ -31,6 +31,7 @@ $(document).ready(function() {
     var toppings = [];
   $('input[name="toppings"]:checked').each(function() {
   toppings.push($(this).val());
+  $("#toppings").prepend("$");
   });
 
   var pizzaOrder = new Order(size, toppings);
