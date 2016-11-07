@@ -31,14 +31,14 @@ $(document).ready(function() {
     var toppings = [];
   $('input[name="toppings"]:checked').each(function() {
   toppings.push($(this).val());
-  $("#toppings").prepend("$");
   });
 
   var pizzaOrder = new Order(size, toppings);
   var totalCost = pizzaOrder.cost();
 
 
-  $("#pizzaCost").text(totalCost);
+  $("#pizzaCost").text("Your total is: $" + totalCost);
+
 
 
 });
