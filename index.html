@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Pizza Palace</title>
+    <title>The Portland Pizza Palace</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
@@ -11,12 +11,12 @@
     <div class="jumbotron">
       <div class="container">
         <header>
-          <h2>The Pizza Palace</h2>
+          <h2>The Portland Pizza Palace</h2>
             <p>Please, make your order below.</p>
         </header>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
 <!--Order Form-->
@@ -25,41 +25,38 @@
 <!--Size-->
 <h3>Please select a size</h3>
   <select class="form-control" id="size">
-    <option>Small</option>
-      <option>Medium</option>
-        <option>Large</option>
+    <option>Small: $6</option>
+      <option>Medium: $7</option>
+        <option>Large: $8</option>
   </select>
   </div>
 
 <!--Toppings-->
   <div class = "toppings">
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" name="toppings" value="sausage"> Sausage
+      <input class="form-check-input" type="checkbox" name="toppings" value="sausage"> Sausage: $1
     </label>
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni"> Pepperoni
+      <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni"> Pepperoni: $1
     </label>
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" name="toppings" value="mushrooms"> Mushrooms
+      <input class="form-check-input" type="checkbox" name="toppings" value="mushrooms"> Mushrooms: $1
     </label>
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" name="toppings" value="greenpep"> Green Peppers
+      <input class="form-check-input" type="checkbox" name="toppings" value="greenpep"> Green Peppers: $1
     </label>
     <label class="form-check-inline">
-      <input class="form-check-input" type="checkbox" name="toppings" value="canbacon"> Canadian Bacon
+      <input class="form-check-input" type="checkbox": name="toppings" value="canbacon"> Canadian Bacon: $1
     </label>
   </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </div>
   </form>
-<div class = "col-xs-12" id = "dollarBox">
-<span id ="pizzaCost"></span></p>
-</div>
 
-
-
-
+<span id ="pizzaCost"></span>
 </div>
 </div>
+</div>
+<p class ="copyright">Copyright 2012 The Portland Pizza Palace</p>
 </body>
 </html>

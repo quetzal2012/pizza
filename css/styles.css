@@ -1,15 +1,18 @@
-
-
-header {
-  align: center;
-  color: red;
-  display: auto;
+.jumbotron {
   background-image: url("http://www.bonesandbehavior.org/aapa2012/portland_mt_hood_view.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.header {
+  align: center;
+  display: auto;
+
+}
+
 #body {
+  background-color: lightblue;
   margin: 0;
   padding: 0;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/06/ed/55/06ed5517964dbe7ba5242fe4f4a367f3.jpg);
 }
 
 .toppings {
@@ -21,7 +24,14 @@ header {
   float: right;
 
 }
-#dollarBox {
-  align: right;
+#pizzaCost {
+  font-size: 500%;
 
+}
+
+.copyright {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
 }

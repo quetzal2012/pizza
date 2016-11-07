@@ -6,17 +6,17 @@ function Order(size, toppings) {
 }
 
 Order.prototype.cost = function () {
-  var cost = 7;
+  var cost = 0;
   for (var i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
-   cost += 1;
+   cost += 0;
   }
   if (this.size === "Small"){
-   cost += 1;
+   cost += 6;
  }  if (this.size === "Medium"){
-   cost += 3;
+   cost += 7;
 }  if (this.size === "Large"){
-   cost += 4;
+   cost += 8;
  }
  }
    return cost;
@@ -37,7 +37,7 @@ $(document).ready(function() {
   var totalCost = pizzaOrder.cost();
 
 
-  $("#pizzaCost").text("Your total is: $" + totalCost);
+  $("#pizzaCost").text("Total: $" + totalCost);
 
 
 
