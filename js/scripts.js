@@ -1,3 +1,5 @@
+//back
+
 function Order(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -40,7 +42,7 @@ $(document).ready(function() {
   var totalCost = pizzaOrder.cost();
 
 
-  $("#pizzaCost").text("$" +totalCost);
+  $("#pizzaCost").text("$" + totalCost);
 
 
 });
