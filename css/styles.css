@@ -1,0 +1,37 @@
+.jumbotron {
+  background-image: url("http://www.bonesandbehavior.org/aapa2012/portland_mt_hood_view.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  align: center;
+  display: auto;
+
+}
+
+#body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+
+.toppings {
+  font-family: helvetica arial;
+  color: blue;
+  font-size: large;
+}
+.btn btn-primary {
+  float: right;
+
+}
+#pizzaCost {
+  font-size: 500%;
+
+}
+
+.copyright {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    text-align:center;
+}
