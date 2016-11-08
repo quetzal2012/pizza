@@ -40,7 +40,7 @@ $(document).ready(function() {
   var totalCost = pizzaOrder.cost();
 
 
-  $("#pizzaCost").text(totalCost);
+  $("#pizzaCost").text("$" +totalCost);
 
 
 });
