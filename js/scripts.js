@@ -1,5 +1,4 @@
-//back
-
+///back
 function Order(size, toppings) {
   this.size = size;
   this.toppings = toppings;
@@ -7,10 +6,7 @@ function Order(size, toppings) {
 
 Order.prototype.cost = function () {
   var cost = 0;
-  for (var i = 0; i < this.toppings.length; i++) {
-    if (this.toppings[i] === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
-   cost += 1;
-  }
+
 
   if (this.size === "Small"){
    cost += 6;
@@ -18,6 +14,10 @@ Order.prototype.cost = function () {
    cost += 7;
 }  if (this.size === "Large"){
    cost += 8;
+ }
+ for (var i = 0; i < this.toppings.length; i++) {
+   if (this.toppings[i] === "sausage" || "pepperoni" || "mushrooms" || "greenpep" || "canbacon") {
+  cost += 1;
  }
  }
    return cost;
@@ -27,11 +27,10 @@ Order.prototype.cost = function () {
 
 //front
 
-
-
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
+
     var size = $("select#size").val();
     var toppings = [];
   $('input[name="toppings"]:checked').each(function() {
